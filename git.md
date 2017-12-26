@@ -16,3 +16,12 @@ If you have any files that are tracked by git and you want to ignore them, so th
 ```
 git update-index --assume-unchanged file_name
 ```
+
+## Undo the most recent commit
+```bash
+git commit -m "Something terribly misguided"
+git reset HEAD~
+<< edit files as necessary >>
+git add ...
+git commit -c ORIG_HEAD
+```
