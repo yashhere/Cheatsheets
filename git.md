@@ -25,3 +25,16 @@ git reset HEAD~
 git add ...
 git commit -c ORIG_HEAD
 ```
+
+## Recovering unstaged changes
+See [this](https://stackoverflow.com/a/1109433)
+```bash
+git fsck --cache --no-reflogs --lost-found --unreachable  HEAD
+```
+
+or
+
+```bash
+git show -p --format=raw $blob > $blob.txt
+```
+
