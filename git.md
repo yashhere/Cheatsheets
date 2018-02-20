@@ -38,3 +38,20 @@ or
 git show -p --format=raw $blob > $blob.txt
 ```
 
+## Update the fork
+```bash
+git checkout master
+git fetch upstream
+git pull upstream master
+```
+
+## Fast forward a branch to master
+```bash
+git checkout <branch_name>
+git merge origin/master
+```
+
+## remove all unstaged changes
+```bash
+git checkout .
+```
