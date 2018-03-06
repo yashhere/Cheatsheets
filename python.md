@@ -1,0 +1,1 @@
+- [How do I know what type of exception occurred?](https://stackoverflow.com/questions/9823936/python-how-do-i-know-what-type-of-exception-occurred)
